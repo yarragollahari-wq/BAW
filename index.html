@@ -1,0 +1,652 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>BAW — מוצרים שחייבים בכל בית</title>
+<meta name="description" content="BAW — חנות אונליין ישראלית לבית. משלוח עד הדלת 3–7 ימי עסקים, תשלום במזומן לשליח, החזרה תוך 14 יום.">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;500;700;900&family=Assistant:wght@300;400;600;700;800&family=Amatic+SC:wght@700&display=swap">
+<link rel="stylesheet" href="baw.css">
+<style>:root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}</style>
+</head>
+<body>
+
+<!-- ─────────── announcement ─────────── -->
+<div class="ann" aria-hidden="true">
+  <div class="ann__t">
+    <div class="ann__g">
+      <span>משלוח עד הבית · 3–7 ימי עסקים</span><i>◆</i>
+      <span>תשלום במזומן בעת המשלוח</span><i>◆</i>
+      <span>קנו 4 — שלמו רק על 3</span><i>◆</i>
+      <span>החזרה תוך 14 יום</span><i>◆</i>
+      <span>053-537-7780</span><i>◆</i>
+    </div>
+    <div class="ann__g">
+      <span>משלוח עד הבית · 3–7 ימי עסקים</span><i>◆</i>
+      <span>תשלום במזומן בעת המשלוח</span><i>◆</i>
+      <span>קנו 4 — שלמו רק על 3</span><i>◆</i>
+      <span>החזרה תוך 14 יום</span><i>◆</i>
+      <span>053-537-7780</span><i>◆</i>
+    </div>
+  </div>
+</div>
+
+<!-- ─────────── header ─────────── -->
+<header class="hdr is-over">
+  <div class="wrap hdr__in">
+    <a class="brand" href="index.html">BAW</a>
+    <nav class="nav" aria-label="ניווט ראשי">
+      <a href="index.html" class="is-on">דף הבית</a>
+      <a href="#shop">מוצרים</a>
+      <a href="#rooms">חדרי הבית</a>
+      <a href="#deal" class="is-deal">מדבקות להקלה בכאבים</a>
+      <a href="#ugc">תוכן לקוחות</a>
+      <a href="#story">אודותינו</a>
+      <a href="#faq">צור קשר</a>
+    </nav>
+    <div class="hdr__acts">
+      <button class="ib" aria-label="חיפוש"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg></button>
+      <button class="ib" aria-label="מועדפים"><svg viewBox="0 0 24 24"><path d="M20.8 5.6a5.5 5.5 0 0 0-7.8 0L12 6.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l8.8 8.8 8.8-8.8a5.5 5.5 0 0 0 0-7.8z"/></svg></button>
+      <button class="ib" data-cart-open aria-label="סל הקניות">
+        <svg viewBox="0 0 24 24"><path d="M6 7h12l1.4 12.2a2 2 0 0 1-2 2.2H6.6a2 2 0 0 1-2-2.2z"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/></svg>
+        <span class="dot num" id="cartCount" hidden>0</span>
+      </button>
+      <button class="ib burger" data-nav-open aria-label="תפריט"><svg viewBox="0 0 24 24"><path d="M3 7h18M3 12h18M3 17h18"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<!-- ─────────── hero ─────────── -->
+<section class="hero">
+  <div class="hero__bg"><img src="img/hero.webp" alt="חדר שינה מעוצב עם שידת לילה" fetchpriority="high" width="1900" height="1188"></div>
+  <div class="wrap hero__in">
+
+    <span class="eyebrow" style="color:rgba(242,240,235,.74)">מוצרים שחייבים בכל בית</span>
+    <h1 style="margin-top:14px">
+      קודם המוצר מגיע.<br>
+      <span class="u">ורק אז משלמים
+        <svg class="scribble scribble--paper ink-draw" viewBox="0 0 320 16" preserveAspectRatio="none" aria-hidden="true">
+          <path d="M4 10c52-6 106-8 158-5 50 3 100 6 154 2"/>
+          <path d="M14 14c56-4 112-5 166-3 44 2 88 4 132 1" opacity=".5"/>
+        </svg>
+      </span>.
+    </h1>
+    <p class="hero__lede">אנחנו מביאים לבית הישראלי ריהוט, אחסון ומוצרי בית במחיר הוגן — ונותנים לכם לשלם רק כשהשליח עומד בדלת והמוצר כבר בידיים שלכם.</p>
+
+    <div class="hero__cta">
+      <a class="btn btn--paper" href="#shop">לכל המוצרים</a>
+      <a class="btn btn--onforest" href="#story">איך התשלום עובד</a>
+      <span class="hero__note">
+        <svg class="scribble scribble--paper ink-draw" viewBox="0 0 92 46" style="width:66px" aria-hidden="true">
+          <path d="M84 40C70 16 46 6 16 10"/>
+          <path d="M8 4 13 11 24 9"/>
+        </svg>
+        <span class="hand hand--paper tilt-a">₪0 מראש</span>
+      </span>
+    </div>
+
+    <div class="hstrip">
+      <div><b class="num" data-count="52000" data-suffix="+">52,000+</b><span>לקוחות מרוצים</span></div>
+      <div><b class="num">4.9</b><span>דירוג ממוצע באתר</span></div>
+      <div><b class="num" data-count="98" data-suffix="%">98%</b><span>שביעות רצון</span></div>
+      <div><b>3–7</b><span>ימי עסקים עד הדלת</span></div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ─────────── promise marquee ─────────── -->
+<div class="promise" aria-label="ההבטחות שלנו">
+  <div class="promise__t">
+    <div class="promise__g">
+      <span><svg viewBox="0 0 24 24"><rect x="2" y="6" width="20" height="12" rx="2"/><circle cx="12" cy="12" r="2.4"/></svg>תשלום במזומן לשליח</span><em>◆</em>
+      <span><svg viewBox="0 0 24 24"><path d="M1 5h13v10H1z"/><path d="M14 8h4l3.5 3.5V15H14z"/><circle cx="5.5" cy="18" r="2.1"/><circle cx="17.5" cy="18" r="2.1"/></svg>משלוח עד הדלת בכל הארץ</span><em>◆</em>
+      <span><svg viewBox="0 0 24 24"><path d="M12 21.5s7.5-3.8 7.5-9.5V5L12 2.5 4.5 5v7c0 5.7 7.5 9.5 7.5 9.5z"/><path d="m9 11.5 2 2 4-4"/></svg>אחריות מלאה על כל מוצר</span><em>◆</em>
+      <span><svg viewBox="0 0 24 24"><path d="M3 12a9 9 0 1 0 3-6.7"/><path d="M3 4v5h5"/></svg>14 יום להחזרה</span><em>◆</em>
+    </div>
+    <div class="promise__g" aria-hidden="true">
+      <span><svg viewBox="0 0 24 24"><rect x="2" y="6" width="20" height="12" rx="2"/><circle cx="12" cy="12" r="2.4"/></svg>תשלום במזומן לשליח</span><em>◆</em>
+      <span><svg viewBox="0 0 24 24"><path d="M1 5h13v10H1z"/><path d="M14 8h4l3.5 3.5V15H14z"/><circle cx="5.5" cy="18" r="2.1"/><circle cx="17.5" cy="18" r="2.1"/></svg>משלוח עד הדלת בכל הארץ</span><em>◆</em>
+      <span><svg viewBox="0 0 24 24"><path d="M12 21.5s7.5-3.8 7.5-9.5V5L12 2.5 4.5 5v7c0 5.7 7.5 9.5 7.5 9.5z"/><path d="m9 11.5 2 2 4-4"/></svg>אחריות מלאה על כל מוצר</span><em>◆</em>
+      <span><svg viewBox="0 0 24 24"><path d="M3 12a9 9 0 1 0 3-6.7"/><path d="M3 4v5h5"/></svg>14 יום להחזרה</span><em>◆</em>
+    </div>
+  </div>
+</div>
+
+<!-- ─────────── rooms ─────────── -->
+<section class="sec wrap" id="rooms">
+  <div class="shead rev">
+    <div class="shead__row">
+      <div>
+        <span class="eyebrow">13 קטגוריות · 43 מוצרים</span>
+        <h2 class="h-lg" style="margin-top:12px">מתחילים מהחדר<br>שהכי מפריע לכם</h2>
+      </div>
+      <a class="tlink" href="#shop">לכל הקטלוג ←</a>
+    </div>
+  </div>
+  <div class="cats rev" data-d="60">
+    <a class="cat" href="#shop"><span class="cat__ph"><img loading="lazy" src="img/cat-bed.webp" alt=""></span><b>חדר שינה</b><span>4 מוצרים</span></a>
+    <a class="cat" href="#shop"><span class="cat__ph"><img loading="lazy" src="img/cat-liv.webp" alt=""></span><b>סלון</b><span>13 מוצרים</span></a>
+    <a class="cat" href="#shop"><span class="cat__ph"><img loading="lazy" src="img/cat-kit.webp" alt=""></span><b>מטבח</b><span>9 מוצרים</span></a>
+    <a class="cat" href="#shop"><span class="cat__ph"><img loading="lazy" src="img/cat-sto.webp" alt=""></span><b>ארונות ואחסון</b><span>11 מוצרים</span></a>
+    <a class="cat" href="#shop"><span class="cat__ph"><img loading="lazy" src="img/cat-sofa.webp" alt=""></span><b>כורסאות</b><span>3 מוצרים</span></a>
+    <a class="cat" href="#shop"><span class="cat__ph"><img loading="lazy" src="img/cat-shelf.webp" alt=""></span><b>מדפים</b><span>5 מוצרים</span></a>
+    <a class="cat" href="#shop"><span class="cat__ph"><img loading="lazy" src="img/cat-side.webp" alt=""></span><b>שולחנות צד</b><span>4 מוצרים</span></a>
+    <a class="cat" href="#shop"><span class="cat__ph"><img loading="lazy" src="img/cat-text.webp" alt=""></span><b>טקסטיל</b><span>2 מוצרים</span></a>
+  </div>
+</section>
+
+<!-- ─────────── COD story ─────────── -->
+<section class="sec wrap" id="story" style="padding-top:0">
+  <div class="split split--wide-img">
+    <div class="split__fig split__fig--dl rev">
+      <img loading="lazy" src="img/story-cod.webp" alt="שליח מגיע עם חבילה עד דלת הבית" width="1300" height="1625">
+      <span class="dots" aria-hidden="true"></span>
+    </div>
+    <div class="split__body rev" data-d="90">
+      <span class="eyebrow">תשלום במזומן · כך זה עובד</span>
+      <h2 class="h-lg">לא משלמים שקל<br>עד שהמוצר בבית</h2>
+      <p class="lede">רוב הישראלים מהססים למסור פרטי אשראי לחנות שהם לא מכירים. זו הסיבה שבנינו את BAW אחרת — אתם מזמינים בלי כרטיס, ומשלמים לשליח רק אחרי שפתחתם ובדקתם.</p>
+      <div class="steps">
+        <div class="step"><span class="step__n">1</span><div><b>מזמינים באתר</b><p>שם, טלפון וכתובת. בלי כרטיס אשראי, בלי הרשמה, בלי התחייבות.</p></div></div>
+        <div class="step"><span class="step__n">2</span><div><b>השליח מתאם ומגיע</b><p>תוך 3–7 ימי עסקים, לכל הארץ, באריזה מוגנת — עם שיחה מראש.</p></div></div>
+        <div class="step"><span class="step__n">3</span><div><b>בודקים, ואז משלמים</b><p>פותחים מול השליח. הכול תקין — משלמים במזומן. לא מרוצים — מחזירים תוך 14 יום.</p></div></div>
+      </div>
+      <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin-top:6px">
+        <a class="btn" href="#shop">מתחילים להזמין</a>
+        <span class="hand tilt-b">בלי סיכון</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────── shoppable room ─────────── -->
+<section class="sec wrap" id="room" style="padding-top:0">
+  <div class="shead rev">
+    <div class="shead__row">
+      <div>
+        <span class="eyebrow">החדר השלם</span>
+        <h2 class="h-lg" style="margin-top:12px">ארבעה פריטים.<br>משלמים על שלושה.</h2>
+        <p class="lede" style="margin-top:14px">רוב הלקוחות שלנו לא קונים רהיט אחד — הם מסדרים חדר. סימנו את מה שיושב בסלון הזה, כדי שתראו איך זה מצטרף יחד.</p>
+      </div>
+      <span class="hand tilt-b" style="align-self:center">הקישו על הנקודות ←</span>
+    </div>
+  </div>
+
+  <div class="room rev" data-d="60">
+    <img loading="lazy" src="img/room-liv.webp" alt="סלון מעוצב עם ספסל אחסון, שולחנות זכוכית ומדפי קיר" width="1800" height="1013">
+    <div class="spot" style="inset-inline-end:31%;top:62%">
+      <button class="spot__b num" type="button" aria-expanded="false" aria-label="פריט 1 בחדר">1</button>
+      <span class="spot__c"><img src="img/p3.webp" alt=""><span><b>ספסל אחסון עותאמן</b><span class="num">₪400</span></span></span>
+    </div>
+    <div class="spot" style="inset-inline-end:52%;top:71%">
+      <button class="spot__b num" type="button" aria-expanded="false" aria-label="פריט 2 בחדר">2</button>
+      <span class="spot__c"><img src="img/p7.webp" alt=""><span><b>זוג שולחנות זכוכית אושר</b><span class="num">₪500</span></span></span>
+    </div>
+    <div class="spot" style="inset-inline-end:71%;top:33%">
+      <button class="spot__b num" type="button" aria-expanded="false" aria-label="פריט 3 בחדר">3</button>
+      <span class="spot__c"><img src="img/p9.webp" alt=""><span><b>סט 3 מדפי קיר פינתיים</b><span class="num">₪250</span></span></span>
+    </div>
+    <div class="spot" style="inset-inline-end:16%;top:28%">
+      <button class="spot__b num" type="button" aria-expanded="false" aria-label="פריט 4 בחדר">4</button>
+      <span class="spot__c"><img src="img/p6.webp" alt=""><span><b>ארון עץ עומד PantryCraft</b><span class="num">₪600</span></span></span>
+    </div>
+  </div>
+
+  <div class="room__legend rev" data-d="90">
+    <div><b>1</b><span>ספסל אחסון עותאמן</span><em class="num">₪400</em><s class="num">₪800</s></div>
+    <div><b>2</b><span>זוג שולחנות אושר</span><em class="num">₪500</em><s class="num">₪1,000</s></div>
+    <div><b>3</b><span>סט 3 מדפי קיר</span><em class="num">₪250</em><s class="num">₪500</s></div>
+    <div><b>4</b><span>ארון עץ PantryCraft</span><em class="num">₪600</em><s class="num">₪1,000</s></div>
+  </div>
+
+  <div class="rev" data-d="120" style="display:flex;align-items:center;gap:20px;flex-wrap:wrap;margin-top:26px;
+       border-top:1px solid var(--rule);padding-top:24px">
+    <div>
+      <span class="micro">4 פריטים · הזול מביניהם עלינו</span>
+      <div style="display:flex;align-items:baseline;gap:11px;margin-top:4px">
+        <b class="num" style="font-family:var(--f-display);font-size:1.9rem;font-weight:500">₪1,500</b>
+        <s class="num" style="color:var(--ink-3)">₪1,750</s>
+        <span class="hand">חוסכים ₪250</span>
+      </div>
+    </div>
+    <button class="btn" id="addRoom" style="margin-inline-start:auto">הוספת החדר כולו לסל</button>
+  </div>
+</section>
+
+<!-- ─────────── shop ─────────── -->
+<section class="sec wrap" id="shop" style="padding-top:0">
+  <div class="shead rev">
+    <div class="shead__row">
+      <div>
+        <span class="eyebrow">מדורג לפי ביקורות באתר</span>
+        <h2 class="h-lg" style="margin-top:12px">הנמכרים ביותר</h2>
+        <p class="lede" style="margin-top:14px">המוצרים שהכי הרבה בתים בישראל כבר הזמינו. כל המחירים כוללים מע״מ, וכולם זמינים בתשלום במזומן לשליח.</p>
+      </div>
+      <a class="tlink" href="#">כל 43 המוצרים ←</a>
+    </div>
+  </div>
+  <div class="pgrid" id="grid"></div>
+</section>
+
+<!-- ─────────── proof ─────────── -->
+<div class="proof" aria-label="מספרים על BAW">
+  <div class="proof__t">
+    <div class="proof__g">
+      <div><b class="num">52,000+</b><span>לקוחות מאז ההשקה</span></div><i>◆</i>
+      <div><b class="num">4.9</b><span>דירוג ממוצע באתר</span></div><i>◆</i>
+      <div><b class="num">50,000</b><span>עוקבים בפייסבוק</span></div><i>◆</i>
+      <div><b class="num">17,400</b><span>עוקבים באינסטגרם</span></div><i>◆</i>
+      <div><b class="num">98%</b><span>שביעות רצון</span></div><i>◆</i>
+      <div><b class="num">43</b><span>מוצרים בקטלוג</span></div><i>◆</i>
+    </div>
+    <div class="proof__g" aria-hidden="true">
+      <div><b class="num">52,000+</b><span>לקוחות מאז ההשקה</span></div><i>◆</i>
+      <div><b class="num">4.9</b><span>דירוג ממוצע באתר</span></div><i>◆</i>
+      <div><b class="num">50,000</b><span>עוקבים בפייסבוק</span></div><i>◆</i>
+      <div><b class="num">17,400</b><span>עוקבים באינסטגרם</span></div><i>◆</i>
+      <div><b class="num">98%</b><span>שביעות רצון</span></div><i>◆</i>
+      <div><b class="num">43</b><span>מוצרים בקטלוג</span></div><i>◆</i>
+    </div>
+  </div>
+</div>
+
+<!-- ─────────── stat band ─────────── -->
+<section class="band">
+  <div class="band__bg"><img loading="lazy" src="img/band.webp" alt="" width="1900" height="814"></div>
+  <div class="wrap band__in">
+    <div style="display:flex;align-items:center;gap:clamp(20px,4vw,48px);flex-wrap:wrap">
+      <div class="seal" aria-hidden="true">
+        <svg viewBox="0 0 200 200">
+          <defs><path id="sealArc" fill="none" d="M100,100 m-76,0 a76,76 0 1,1 152,0 a76,76 0 1,1 -152,0"/></defs>
+          <circle cx="100" cy="100" r="95" fill="none" stroke="rgba(201,168,104,.55)" stroke-width="1"/>
+          <circle cx="100" cy="100" r="56" fill="none" stroke="rgba(201,168,104,.45)" stroke-width="1"/>
+          <text fill="#C9A868" font-size="17" font-family="Assistant, sans-serif" font-weight="800" letter-spacing="1.2">
+            <textPath href="#sealArc" startOffset="0%">אחריות מלאה · החזרה 14 יום · משלוח עד הבית · </textPath>
+          </text>
+        </svg>
+        <span class="seal__c" style="color:var(--paper)"><b style="color:var(--paper)">14</b><span style="color:rgba(242,240,235,.7)">יום</span></span>
+      </div>
+      <div>
+        <span class="eyebrow">למה קונים אצלנו</span>
+        <h2 class="h-lg" style="margin-top:10px">חנות קטנה<br>שמתנהגת כמו גדולה</h2>
+      </div>
+    </div>
+    <p class="lede" style="color:rgba(242,240,235,.82)">BAW נולדה מרעיון פשוט: להביא מוצרים איכותיים במחיר הוגן לכל בית בישראל, עם שירות שלא תמצאו במקום אחר. אנחנו צוות קטן — ולכן עונים לכם אנשים, לא בוטים.</p>
+    <div class="band__stats">
+      <div><b class="num">52,000+</b><span>לקוחות מאז ההשקה</span></div>
+      <div><b class="num">43</b><span>מוצרים נבחרים בקטלוג</span></div>
+      <div><b class="num">4.9</b><span>דירוג ממוצע באתר</span></div>
+      <div><b>א׳–ה׳</b><span>09:00–17:00 · ו׳ עד 14:00</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────── deal ─────────── -->
+<section class="deal grain" id="deal">
+  <div class="wrap deal__in">
+    <div style="display:flex;flex-direction:column;gap:18px;align-items:flex-start">
+      <span class="eyebrow">מבצע היום · מתאפס בחצות</span>
+      <h2 class="h-lg">FlexiPatch — הקלה טבעית<br>על כאבי גב ומפרקים</h2>
+      <p>בלי כדורים, בלי משחות, בלי תור למרפאה. מדבקה אחת, עד 12 שעות הקלה. המוצר עם מספר הביקורות הגבוה ביותר בקטגוריית הבריאות שלנו.</p>
+      <div class="deal__price">
+        <b class="num">₪120</b><s class="num">₪240</s>
+        <span class="hand" style="color:var(--ochre)">חוסכים ₪120</span>
+      </div>
+      <div style="display:flex;gap:11px;flex-wrap:wrap;margin-top:6px">
+        <button class="btn btn--ochre" data-add="flexipatch" data-name="מדבקות FlexiPatch" data-price="120" data-img="img/p12.webp">הוספה לסל · ₪120</button>
+        <a class="btn btn--onforest" href="#shop">לכל המוצרים</a>
+      </div>
+      <p class="micro" style="color:var(--on-forest-2)">
+        <span class="stars" style="vertical-align:-1px"><svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.8.8-5 4.7 1.3 6.8L12 17.3 5.9 20.6 7.2 13.8l-5-4.7 6.8-.8z"/></svg></span>
+        <span class="num">1,284</span> ביקורות · הנמכר ביותר בקטגוריה
+      </p>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:14px;align-items:flex-start">
+      <span class="micro" style="color:var(--on-forest-2)">נותרו למבצע</span>
+      <div class="clock" id="clock">
+        <div><b class="num">00</b><span>שעות</span></div><i>:</i>
+        <div><b class="num">00</b><span>דקות</span></div><i>:</i>
+        <div><b class="num">00</b><span>שניות</span></div>
+      </div>
+      <p class="micro" style="color:var(--on-forest-2);max-width:26ch">המחיר חוזר ל־₪240 בחצות. המבצע מתחדש מדי יום על מוצר אחר בקטלוג.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────── bundle ladder ─────────── -->
+<section class="sec wrap" id="bundle">
+  <div class="split" style="align-items:start">
+    <div class="rev">
+      <span class="eyebrow">מבצע קבוע · כל הקטלוג</span>
+      <h2 class="h-lg" style="margin-top:12px">ככל שהסל מתמלא,<br>משלמים על פחות</h2>
+      <p class="lede" style="margin-top:16px">המבצע חל על כל 43 המוצרים, גם כשמערבבים בין קטגוריות. הפריט הזול בסל הוא זה שיורד מהחשבון — וההנחה מחושבת אוטומטית, בלי קוד קופון.</p>
+      <div style="display:flex;align-items:flex-start;gap:12px;margin-top:22px">
+        <svg class="scribble ink-draw" viewBox="0 0 80 54" style="width:64px" aria-hidden="true">
+          <path d="M4 8c18-4 40 2 52 16 6 7 9 16 8 24"/>
+          <path d="M52 44l12 6 2-13"/>
+        </svg>
+        <span class="hand tilt-c" style="margin-top:16px">נסו להוסיף 4 פריטים</span>
+      </div>
+    </div>
+    <div class="ladder rev" data-d="90">
+      <div class="rung">
+        <span class="rung__q num">1–3</span>
+        <span class="rung__d">פריטים בסל</span>
+        <span class="rung__s">מחיר המבצע הרגיל</span>
+      </div>
+      <div class="rung is-best">
+        <span class="rung__tag hand">הכי משתלם</span>
+        <span class="rung__q num">4</span>
+        <span class="rung__d">משלמים על 3</span>
+        <span class="rung__s">הפריט הזול בסל — חינם</span>
+      </div>
+      <div class="rung">
+        <span class="rung__q num">8</span>
+        <span class="rung__d">משלמים על 6</span>
+        <span class="rung__s">שני הפריטים הזולים — חינם</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────── editorial: furniture ─────────── -->
+<section class="sec--sm wrap">
+  <div class="split split--flip">
+    <div class="split__body rev">
+      <span class="eyebrow">איך אנחנו בוחרים</span>
+      <h2 class="h-md">43 מוצרים. לא 4,300.</h2>
+      <p class="lede">אנחנו לא מוכרים כל מה שאפשר לייבא. כל פריט שנכנס לקטלוג עובר בדיקת איכות, ונשאר רק אם לקוחות ממשיכים להזמין אותו. זו הסיבה שהקטלוג קטן — ושהדירוג הממוצע שלו נשאר 4.9.</p>
+      <a class="tlink" href="#shop">לראות מה נכנס השבוע ←</a>
+    </div>
+    <div class="split__fig split__fig--dr rev" data-d="80">
+      <img loading="lazy" src="img/story-chair.webp" alt="כורסה עם כרית בסלון מעוצב" width="1300" height="1625">
+      <span class="dots dots--ochre" aria-hidden="true"></span>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────── standards ─────────── -->
+<section class="sec--sm wrap" style="padding-top:0">
+  <div class="hrule rev" style="margin-bottom:8px"><span>שלושה תנאים לכניסה לקטלוג</span></div>
+  <div class="stds rev" data-d="60">
+    <div class="std">
+      <span class="std__n">01</span>
+      <h3>עובר בדיקה פיזית</h3>
+      <p>אנחנו מזמינים דוגמה, מרכיבים אותה, ומשתמשים בה לפני שהיא עולה לאתר. אם היא מתפרקת אצלנו — היא לא תגיע אליכם.</p>
+    </div>
+    <div class="std">
+      <span class="std__n">02</span>
+      <h3>פותר בעיה אמיתית בבית</h3>
+      <p>לא גאדג׳ט שמעניין שבוע. כל פריט צריך לענות על מצוקה יומיומית — מקום אחסון, סדר, נוחות — בדירה ישראלית ממוצעת.</p>
+    </div>
+    <div class="std">
+      <span class="std__n">03</span>
+      <h3>נשאר רק אם ממשיכים להזמין</h3>
+      <p>מוצר שמצטבר לו אחוז החזרות גבוה או ביקורות פושרות יורד מהמדף. זו הסיבה שהקטלוג נשאר 43 פריטים ולא 4,300.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────── pull quote ─────────── -->
+<section class="sec--sm wrap wrap--narrow">
+  <blockquote class="quote rev">
+    <span class="quote__m" aria-hidden="true">”</span>
+    <div>
+      <p>הזמנתי בלי להאמין שזה יגיע. השליח התקשר יום לפני, הגיע בזמן, חיכה שאפתח ואבדוק — ורק אז לקח את הכסף. זו הפעם הראשונה שקניתי רהיט אונליין בלי להילחץ.</p>
+      <footer>
+        <b>רונית ל׳</b><span>·</span><span>ראשון לציון</span><span>·</span>
+        <span class="stars" aria-label="5 מתוך 5">
+          <svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.8.8-5 4.7 1.3 6.8L12 17.3 5.9 20.6 7.2 13.8l-5-4.7 6.8-.8z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.8.8-5 4.7 1.3 6.8L12 17.3 5.9 20.6 7.2 13.8l-5-4.7 6.8-.8z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.8.8-5 4.7 1.3 6.8L12 17.3 5.9 20.6 7.2 13.8l-5-4.7 6.8-.8z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.8.8-5 4.7 1.3 6.8L12 17.3 5.9 20.6 7.2 13.8l-5-4.7 6.8-.8z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.8.8-5 4.7 1.3 6.8L12 17.3 5.9 20.6 7.2 13.8l-5-4.7 6.8-.8z"/></svg>
+        </span>
+        <span class="ph">ציטוט לדוגמה</span>
+      </footer>
+    </div>
+  </blockquote>
+</section>
+
+<!-- ─────────── concierge ─────────── -->
+<section class="conc grain">
+  <div class="wrap conc__in">
+    <div style="display:flex;flex-direction:column;gap:18px;align-items:flex-start">
+      <span class="eyebrow" style="color:var(--brass)">ליווי אישי · ללא תוספת תשלום</span>
+      <h2 class="h-lg">לא בטוחים שזה ייכנס?<br>תשאלו אותנו לפני.</h2>
+      <p>רהיט שלא מתאים לחלל הוא בזבוז זמן לשני הצדדים. לפני שאתם מזמינים — שלחו לנו מידות או תמונה של החדר בוואטסאפ, ונגיד לכם בכנות אם הפריט מתאים, איזו תצורה עדיפה, ומה כדאי לקחת במקום.</p>
+      <div class="conc__list">
+        <div><svg viewBox="0 0 24 24"><path d="M3 6h13v9H3z"/><path d="M6 10h7M6 12.5h4"/><path d="m8 15-2 3"/></svg>
+          <div><b>בדיקת מידות מול החלל</b><span>שולחים מידה או תמונה — מקבלים תשובה תוך שעות העבודה.</span></div></div>
+        <div><svg viewBox="0 0 24 24"><path d="M12 3v18M7 8l5-5 5 5"/></svg>
+          <div><b>המלצה על תצורה וצבע</b><span>שתי מגירות או שלוש, לבן או אפור — לפי החדר שלכם, לא לפי המלאי שלנו.</span></div></div>
+        <div><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+          <div><b>תיאום חלון משלוח</b><span>בוחרים יום שנוח לכם. השליח מתקשר לפני שהוא יוצא.</span></div></div>
+        <div><svg viewBox="0 0 24 24"><path d="M3 12a9 9 0 1 0 3-6.7"/><path d="M3 4v5h5"/></svg>
+          <div><b>איסוף להחזרה מהבית</b><span>לא התאים? אנחנו מסדרים את האיסוף — בלי דמי ביטול.</span></div></div>
+      </div>
+      <a class="btn btn--paper" href="https://wa.me/972535377780" target="_blank" rel="noopener" style="margin-top:6px">לשיחה בוואטסאפ · 053-537-7780</a>
+    </div>
+    <div class="conc__fig rev" data-d="80">
+      <img loading="lazy" src="img/concierge.webp" alt="חבילה מונחת בכניסה לבית" width="1100" height="825">
+    </div>
+  </div>
+</section>
+
+<!-- ─────────── UGC ─────────── -->
+<section class="sec--sm" id="ugc" style="background:var(--paper-2);padding-block:clamp(44px,6vw,80px)">
+  <div class="wrap">
+    <div class="shead rev">
+      <div class="shead__row">
+        <div>
+          <span class="eyebrow">תוכן לקוחות</span>
+          <h2 class="h-md" style="margin-top:12px">ככה זה נראה אצלכם בבית</h2>
+          <p class="small" style="margin-top:10px">תמונות שלקוחות שולחים לנו אחרי שהמוצר הגיע. <span class="ph">תצוגה לדוגמה</span></p>
+        </div>
+        <a class="tlink" href="#">לכל התוכן ←</a>
+      </div>
+    </div>
+  </div>
+  <div class="wrap" style="padding-inline:0">
+    <div class="ugcrail rev" data-d="60" style="margin-inline:0;padding-inline:var(--gut)">
+      <figure class="pola"><img loading="lazy" src="img/p1.webp" alt=""><figcaption><b>שידת לילה חכמה</b><span>חדר שינה · ראשון לציון</span></figcaption></figure>
+      <figure class="pola"><img loading="lazy" src="img/p3.webp" alt=""><figcaption><b>ספסל אחסון עותאמן</b><span>סלון · תל אביב</span></figcaption></figure>
+      <figure class="pola"><img loading="lazy" src="img/p5.webp" alt=""><figcaption><b>ארון נעליים AntBox</b><span>מסדרון · חיפה</span></figcaption></figure>
+      <figure class="pola"><img loading="lazy" src="img/p4.webp" alt=""><figcaption><b>ארונית מטבח אפוריא</b><span>מטבח · באר שבע</span></figcaption></figure>
+      <figure class="pola"><img loading="lazy" src="img/p9.webp" alt=""><figcaption><b>מדפי קיר פינתיים</b><span>מטבח · ירושלים</span></figcaption></figure>
+      <figure class="pola"><img loading="lazy" src="img/p7.webp" alt=""><figcaption><b>זוג שולחנות אושר</b><span>סלון · נתניה</span></figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────── FAQ ─────────── -->
+<section class="sec wrap wrap--narrow" id="faq">
+  <div class="shead rev">
+    <span class="eyebrow">שאלות נפוצות</span>
+    <h2 class="h-lg" style="margin-top:12px">מה שחשוב לדעת<br>לפני שמזמינים</h2>
+  </div>
+  <div class="faq rev" data-d="60">
+    <details open><summary>איך בדיוק עובד התשלום במזומן?<span></span></summary><p>מזמינים באתר בלי למסור פרטי אשראי. כשהשליח מגיע, בודקים את המוצר — ורק אז משלמים לו במזומן את הסכום שמופיע בהזמנה. אין תוספת מחיר על תשלום במזומן.</p></details>
+    <details><summary>כמה זמן לוקח המשלוח?<span></span></summary><p>3–7 ימי עסקים לכל הארץ, מהיום שההזמנה מאושרת טלפונית. פריטי ריהוט גדולים עשויים לקחת עד 7 ימי עסקים. השליח מתאם איתכם טלפונית לפני ההגעה.</p></details>
+    <details><summary>מה קורה אם המוצר לא מתאים לי?<span></span></summary><p>יש לכם 14 יום מרגע קבלת המוצר להחזיר אותו, באריזה המקורית ובמצב תקין. פונים אלינו בוואטסאפ ל־053-537-7780 ואנחנו מסדרים את האיסוף.</p></details>
+    <details><summary>האם אפשר לשלם באשראי?<span></span></summary><p>כן. אפשר לשלם בכרטיס אשראי באתר ולקבל 5% הנחה נוספת, או במזומן לשליח בעת המשלוח — מה שנוח לכם.</p></details>
+    <details><summary>איך עובד המבצע של ״קנו 4 שלמו על 3״?<span></span></summary><p>ההנחה מחושבת אוטומטית בסל, בלי קוד קופון. עם 4 פריטים — הזול מביניהם יורד מהחשבון. עם 8 פריטים — שני הזולים יורדים. אפשר לערבב מוצרים מקטגוריות שונות.</p></details>
+    <details><summary>יש אחריות על המוצרים?<span></span></summary><p>כל מוצר בקטלוג מגיע עם אחריות מלאה, כולל חלקי חשמל. אם משהו מתקלקל — פונים אלינו ואנחנו מטפלים, מתקנים או מחליפים.</p></details>
+  </div>
+  <div style="display:flex;align-items:center;gap:18px;margin-top:36px;flex-wrap:wrap">
+    <a class="btn" href="https://wa.me/972535377780" target="_blank" rel="noopener">שאלה נוספת? בוואטסאפ</a>
+    <span class="small">א׳–ה׳ 09:00–17:00 · ו׳ 10:00–14:00</span>
+  </div>
+</section>
+
+<!-- ─────────── footer ─────────── -->
+<footer class="ft grain">
+  <div class="wrap">
+    <div class="ft__grid">
+      <div class="ft__about">
+        <span class="brand" style="color:var(--on-forest)">BAW</span>
+        <p>מוצרים שחייבים בכל בית. חנות אונליין ישראלית — משלוח עד הדלת, תשלום במזומן לשליח, והחזרה תוך 14 יום.</p>
+        <div style="display:flex;gap:8px;margin-top:18px">
+          <a class="ib" href="https://www.facebook.com/BAWSHOPIL" target="_blank" rel="noopener" aria-label="פייסבוק" style="color:var(--on-forest)"><svg viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M14 9V7c0-1 .3-1.5 1.6-1.5H18V2h-3c-3 0-4.5 1.6-4.5 4.4V9H8v3.5h2.5V22H14v-9.5h2.8l.4-3.5z"/></svg></a>
+          <a class="ib" href="https://www.instagram.com/bawstore.il/" target="_blank" rel="noopener" aria-label="אינסטגרם" style="color:var(--on-forest)"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.4" cy="6.6" r="1" fill="currentColor" stroke="none"/></svg></a>
+        </div>
+      </div>
+      <div><h4>קניות</h4><ul>
+        <li><a href="index.html">דף הבית</a></li><li><a href="#shop">כל המוצרים</a></li>
+        <li><a href="#rooms">חדרי הבית</a></li><li><a href="#deal">מדבקות להקלה בכאבים</a></li>
+        <li><a href="#ugc">תוכן לקוחות</a></li></ul></div>
+      <div><h4>מידע</h4><ul>
+        <li><a href="#story">אודותינו</a></li><li><a href="#faq">מדיניות משלוחים</a></li>
+        <li><a href="#faq">מדיניות החזרות</a></li><li><a href="#faq">תקנון ותנאי שימוש</a></li>
+        <li><a href="#faq">מדיניות פרטיות</a></li></ul></div>
+      <div class="ft__svc"><h4>שירות לקוחות</h4><ul>
+        <li><a href="https://wa.me/972535377780" target="_blank" rel="noopener">וואטסאפ · 053-537-7780</a></li>
+        <li><a href="tel:0535377780">טלפון · 053-537-7780</a></li>
+        <li><a href="mailto:bawshopil@gmail.com">bawshopil@gmail.com</a></li></ul>
+        <p class="hours" style="font-size:.82rem;color:var(--on-forest-2);margin-top:14px;line-height:1.7">א׳–ה׳ 09:00–17:00<br>ו׳ 10:00–14:00<br>שבת סגור</p></div>
+    </div>
+    <div class="ft__bot">
+      <span>© 2026 BAW. כל הזכויות שמורות.</span>
+      <div class="pay"><span>מזומן לשליח</span><span>ויזה</span><span>מאסטרקארד</span><span>ישראכרט</span></div>
+    </div>
+  </div>
+  <span class="ft__mark" aria-hidden="true">BAW</span>
+</footer>
+
+<!-- ─────────── chrome ─────────── -->
+<nav class="mbar" aria-label="ניווט מהיר">
+  <a href="index.html" class="is-on"><svg viewBox="0 0 24 24"><path d="M3 10.5 12 3l9 7.5V21H3z"/></svg>בית</a>
+  <a href="#shop"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>מוצרים</a>
+  <a href="#deal"><svg viewBox="0 0 24 24"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg>מבצעים</a>
+  <a href="#" data-cart-open><svg viewBox="0 0 24 24"><path d="M6 7h12l1.4 12.2a2 2 0 0 1-2 2.2H6.6a2 2 0 0 1-2-2.2z"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/></svg>סל</a>
+  <a href="https://wa.me/972535377780" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 8.6 8.6 0 0 1-4-.9L3 21l2-4a8.4 8.4 0 0 1-1-4 8.5 8.5 0 0 1 17 0z"/></svg>שירות</a>
+</nav>
+
+<a class="wa" href="https://wa.me/972535377780" target="_blank" rel="noopener" aria-label="וואטסאפ">
+  <svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.1-.7.2l-.9 1.1c-.2.2-.3.2-.6.1a8 8 0 0 1-4-3.5c-.2-.4 0-.5.1-.7l.6-.7c.1-.2.1-.4 0-.6l-.9-2.1c-.2-.5-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.4-1.2 1.2-1.2 2.8s1.2 3.3 1.4 3.5c.2.2 2.4 3.8 5.9 5.1 2.9 1.1 3.5.9 4.2.9.6-.1 2-.8 2.3-1.6.3-.8.3-1.5.2-1.6l-.7-.4zM12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2z"/></svg>
+</a>
+
+<div class="ov cart" id="cart" role="dialog" aria-modal="true" aria-label="סל הקניות">
+  <div class="ov__bg" data-close></div>
+  <div class="ov__p">
+    <div class="ov__h"><b>סל הקניות</b><button class="ib" data-close aria-label="סגירה"><svg viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></svg></button></div>
+    <div class="citems" id="cartItems"></div>
+    <div class="cfoot">
+      <div class="cnote" id="cartNote" hidden></div>
+      <div class="cfoot__r"><span>סה״כ לתשלום</span><b class="num" id="cartTotal">₪0</b></div>
+      <a class="btn btn--block" href="#">למעבר לתשלום</a>
+      <p class="micro" style="text-align:center">משלמים לשליח במזומן · או באשראי באתר</p>
+    </div>
+  </div>
+</div>
+
+<div class="ov mnav" id="mnav" role="dialog" aria-modal="true" aria-label="תפריט">
+  <div class="ov__bg" data-close></div>
+  <div class="ov__p">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px">
+      <span class="brand">BAW</span>
+      <button class="ib" data-close aria-label="סגירה"><svg viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
+    </div>
+    <a href="index.html" data-close>דף הבית</a>
+    <a href="#shop" data-close>מוצרים</a>
+    <a href="#rooms" data-close>חדרי הבית</a>
+    <a href="#deal" data-close>מדבקות להקלה בכאבים <span class="hand" style="font-size:1.2rem">50%-</span></a>
+    <a href="#ugc" data-close>תוכן לקוחות</a>
+    <a href="#story" data-close>אודותינו</a>
+    <a href="#faq" data-close>צור קשר</a>
+    <a class="btn btn--block" style="margin-top:22px" href="https://wa.me/972535377780" target="_blank" rel="noopener">וואטסאפ · 053-537-7780</a>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="baw.js"></script>
+<script>
+(function(){
+  /* Real BAW catalogue data — names, prices and review counts from baw.co.il.
+     Photography is placeholder pending a product shoot. */
+  var P=[
+   ["nightstand","שידת לילה חכמה עם רמקולים וטעינה אלחוטית","חדר שינה",450,700,523,4.7,"img/p1.webp","product.html","הנמכר ביותר"],
+   ["ottoman-bench","ספסל אחסון דגם עותאמן עם רגליים מעץ","סלון",400,800,2500,4.9,"img/p3.webp","#",""],
+   ["euforia","ארונית אחסון חדשנית למטבח דגם אפוריא","מטבח",300,600,1700,4.7,"img/p4.webp","#",""],
+   ["antbox","ארון נעליים חדשני מתקפל 10 קומות AntBox","אחסון",500,1000,1400,4.8,"img/p5.webp","#",""],
+   ["roma","ארון אחסון 5 מדפים עם דלתות וגלגלים רומא","אחסון",300,600,1954,4.7,"img/p8.webp","#",""],
+   ["adella","סט מראה איפור עם כסא בצבע קרם ADELLA","חדר שינה",750,1500,2300,4.8,"img/p2.webp","#",""],
+   ["shelves","סט של 3 מדפי קיר פינתיים מעץ","מדפים",250,500,2400,4.6,"img/p9.webp","#",""],
+   ["osher","זוג שולחנות סלון זכוכית עגול דגם אושר","סלון",500,1000,234,4.5,"img/p7.webp","#",""],
+   ["pantry","ארון עץ עומד למטבח עם מגירות PantryCraft","מטבח",600,1000,1600,4.7,"img/p6.webp","#",""],
+   ["napoli","שולחן צד חכם עם תאורה וטעינה אלחוטית","שולחנות צד",500,800,127,4.5,"img/p11.webp","#",""],
+   ["shoe-float","ארון נעליים צף עם מגירות מתכת לבן","אחסון",250,500,1500,4.6,"img/p10.webp","#",""],
+   ["aroma-bin","פח אשפה חכם עם דלת כפולה דגם AROMA","מטבח",100,150,2700,4.8,"img/p12.webp","#",""]
+  ];
+  var S='<svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.8.8-5 4.7 1.3 6.8L12 17.3 5.9 20.6 7.2 13.8l-5-4.7 6.8-.8z"/></svg>';
+  var m=window.bawMoney;
+  document.getElementById('grid').innerHTML=P.map(function(p,i){
+    var off=Math.round((p[4]-p[3])/p[4]*100), full=Math.round(p[6]), st='';
+    for(var k=0;k<5;k++) st+= k<full?S:S.replace('<svg','<svg class="off"');
+    return '<article class="card rev" data-d="'+((i%4)*60)+'">'+
+      '<a class="card__fig" href="'+p[8]+'" aria-label="'+p[1]+'">'+
+        '<img loading="lazy" src="'+p[7]+'" alt="'+p[1]+'" width="760" height="950">'+
+        '<span class="card__flag'+(p[9]?' card__flag--clay':'')+'">'+(p[9]||off+'%-')+'</span>'+
+        (i===0?'<span class="card__hand hand hand--paper tilt-a">3 צבעים</span>':'')+
+      '</a>'+
+      '<button class="card__wish" aria-label="הוספה למועדפים"><svg viewBox="0 0 24 24"><path d="M20.8 5.6a5.5 5.5 0 0 0-7.8 0L12 6.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l8.8 8.8 8.8-8.8a5.5 5.5 0 0 0 0-7.8z"/></svg></button>'+
+      '<div class="card__b">'+
+        '<span class="card__cat">'+p[2]+'</span>'+
+        '<a href="'+p[8]+'"><h3 class="card__t">'+p[1]+'</h3></a>'+
+        '<div class="card__r"><span class="stars">'+st+'</span><span class="num">'+p[6]+'</span><span>('+p[5].toLocaleString('he-IL')+')</span></div>'+
+        '<div class="card__p"><b class="num">'+m(p[3])+'</b><s class="num">'+m(p[4])+'</s></div>'+
+        '<button class="card__add" data-add="'+p[0]+'" data-name="'+p[1]+'" data-price="'+p[3]+'" data-img="'+p[7]+'">הוספה לסל</button>'+
+      '</div></article>';
+  }).join('');
+  var ROOM=[["ottoman-bench","ספסל אחסון דגם עותאמן",400,"img/p3.webp"],
+            ["osher","זוג שולחנות זכוכית אושר",500,"img/p7.webp"],
+            ["shelves","סט 3 מדפי קיר פינתיים",250,"img/p9.webp"],
+            ["pantry","ארון עץ עומד PantryCraft",600,"img/p6.webp"]];
+  document.querySelectorAll('.spot').forEach(function(sp){
+    var b=sp.querySelector('.spot__b');
+    b.addEventListener('click',function(e){
+      e.stopPropagation();
+      var open=sp.classList.contains('is-open');
+      document.querySelectorAll('.spot.is-open').forEach(function(o){
+        o.classList.remove('is-open'); o.querySelector('.spot__b').setAttribute('aria-expanded','false');
+      });
+      if(!open){ sp.classList.add('is-open'); b.setAttribute('aria-expanded','true'); }
+    });
+  });
+  document.addEventListener('click',function(){
+    document.querySelectorAll('.spot.is-open').forEach(function(o){
+      o.classList.remove('is-open'); o.querySelector('.spot__b').setAttribute('aria-expanded','false');
+    });
+  });
+  document.addEventListener('keydown',function(e){
+    if(e.key!=='Escape') return;
+    document.querySelectorAll('.spot.is-open').forEach(function(o){
+      o.classList.remove('is-open'); o.querySelector('.spot__b').setAttribute('aria-expanded','false');
+    });
+  });
+
+  var rb=document.getElementById('addRoom');
+  if(rb) rb.addEventListener('click',function(){
+    ROOM.forEach(function(r){ window.bawAdd(r[0],r[1],r[2],r[3],1); });
+    document.getElementById('cart').classList.add('is-open');
+  });
+
+  /* newly injected cards need observing */
+  window.dispatchEvent(new Event('scroll'));
+  if('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+    var io=new IntersectionObserver(function(es){es.forEach(function(en){
+      if(!en.isIntersecting)return;
+      var d=+(en.target.dataset.d||0);
+      setTimeout(function(){en.target.classList.add('in');},d); io.unobserve(en.target);
+    });},{rootMargin:'0px 0px -6% 0px',threshold:.06});
+    document.querySelectorAll('#grid .rev').forEach(function(n){io.observe(n);});
+  } else {
+    document.querySelectorAll('#grid .rev').forEach(function(n){n.classList.add('in');});
+  }
+})();
+</script>
+</body>
+</html>
